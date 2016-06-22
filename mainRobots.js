@@ -8,10 +8,6 @@ Battleground.prototype.addRobot = function(robot) {
 	
 }
 
-Battleground.prototype.startBattle = function() { // to do
-
-
-}
 Battleground.prototype.size = function() {
 	return this.robots.length;
 }
@@ -23,22 +19,6 @@ Battleground.prototype.randomRobot = function(currentRobot) {
    return robot;
 }
 
-
-// Battleground.prototype.checkDeadRobots = function(rob, rob2) {
-// 	if (rob.health <= 0) { 
-// 		console.log('  CRASH!!! - ' + rob.name + ' is destroyed and out of the game');
-// 		rob.alive = false;
-// 		// console.log(bg.robots[indexRobot].alive);
-// 		countAliveRobots--;
-// 		if (countAliveRobots === 1) {
-// 		console.log('--------- ' + rob2.name + ' WINS!!!! -----------')
-// 		exitLoop = false;
-// 		break;
-// 		}
-// 	}
-// }	
-
-
 // ROBOT
 	function Robot(name) {
 		this.name = name;
@@ -47,15 +27,7 @@ Battleground.prototype.randomRobot = function(currentRobot) {
 		this.weapon = makeWeapon();
 	}
 
-	Robot.prototype.attack = function() {  //to do
-
-
-	}
-	Robot.prototype.receiveDamage = function(points) {
-
-
-	}
-
+	
 // WEAPON
 	function Weapon(type, power) {
 		this.type = type;
